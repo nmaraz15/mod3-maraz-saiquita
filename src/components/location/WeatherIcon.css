@@ -1,0 +1,15 @@
+.weather__icon{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0 0 0 0;
+}
+.weather__icon__icon{
+    font-size: 4rem;
+    margin: auto;
+    align-items: center;
+}
+.weather__icon small{
+    font-size: 0.9rem;
+    font-style: italic;
+    padding-bottom: 0rem;
+}

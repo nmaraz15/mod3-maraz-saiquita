@@ -1,0 +1,25 @@
+.container__card{
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 0px;
+  perspective: 900px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.mesage{
+  margin-top: 80px;
+  font-size: 18px;
+  color:  #a4a1a7;
+}
+
+.img__container{
+  border-radius: 5px;
+  padding: 0;
+  margin: 1rem 0;
+}
+.weather__img{
+  width:80%;
+  border-radius: 5px;
+}
