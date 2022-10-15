@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/mod3-maraz-saiquita/static/css/main.071c897b.css",
+    "main.js": "/mod3-maraz-saiquita/static/js/main.6bfa6795.js",
+    "index.html": "/mod3-maraz-saiquita/index.html",
+    "main.071c897b.css.map": "/mod3-maraz-saiquita/static/css/main.071c897b.css.map",
+    "main.6bfa6795.js.map": "/mod3-maraz-saiquita/static/js/main.6bfa6795.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.071c897b.css",
+    "static/js/main.6bfa6795.js"
+  ]
+}
