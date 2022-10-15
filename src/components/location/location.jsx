@@ -26,8 +26,9 @@ const Location = ({ location }) => {
                     
                         <div className="bg"></div>
                         <div className="body__card_front">
-                        <BsGeoAltFill className="icono-lugar"/>
-                            <h1 className="titleFront">{name}</h1>
+                       
+                            <h1 className="titleFront"><BsGeoAltFill />{name}</h1>
+                            
                         </div>
 
                     </div>
