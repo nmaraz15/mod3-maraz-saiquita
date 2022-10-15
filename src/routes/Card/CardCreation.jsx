@@ -4,6 +4,8 @@ import { useNavigate } from 'react-router-dom';
 import { LocationContext } from '../../contexts/LocationContext';
 import { getClima } from '../../service';
 import './CardCreation.css';
+import "sweetalert2/dist/sweetalert2.css";
+import Swal from "sweetalert2";
 
 const CardCreation = () => {
   const { tarjeta, setTarjeta } = useContext(LocationContext) //context
@@ -37,8 +39,17 @@ const CardCreation = () => {
         deleted : false
       };
       setTarjeta([...tarjeta, locationNew])
-      navigate('/')
-    }) 
+      Swal.fire({
+        text: "Created New Card",
+        icon: "success",
+        confirmButtonText: "OK",
+      }).then((result) => {
+        if (result.isConfirmed) {
+          navigate("/");
+        }
+      });
+      /* navigate('/') */
+    })
     .catch((err) => console.log(err));  
   };
 
