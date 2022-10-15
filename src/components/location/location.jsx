@@ -3,6 +3,7 @@ import { useEffect, useContext, useState } from "react";
 import { LocationContext } from "../../contexts/LocationContext";
 import { Link } from "react-router-dom";
 import "./location.css";
+import { BsGeoAltFill, BsThermometerHalf, BsWind } from "react-icons/bs";
 
 import WeatherIcon from "./WeatherIcon";
 
@@ -25,8 +26,9 @@ const Location = ({ location }) => {
                     
                         <div className="bg"></div>
                         <div className="body__card_front">
-                         
-                            <h1 className="titleFront">{name}</h1>
+                       
+                            <h1 className="titleFront"><BsGeoAltFill />{name}</h1>
+                            
                         </div>
 
                     </div>
@@ -38,8 +40,12 @@ const Location = ({ location }) => {
         
                             <p>Latitude: {latitude}</p>
                             <p>Longitude: {longitude} </p>
-                            <p>Temperature: {current_weather.temperature}° </p>
-                            <p>Wind Speed: {current_weather.windspeed}km/h </p>
+                            <p>Temperature: {current_weather.temperature}° 
+                            <BsThermometerHalf />
+                            </p>
+                            <p>
+                            Wind Speed: {current_weather.windspeed}km/h  
+                              <BsWind className="ico-viento"/></p>
                             
                         </div>
 

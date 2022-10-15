@@ -125,3 +125,12 @@ body{
   height: 10px;
   background: rgb(255, 255, 255);
 }
+/* .icono-lugar{
+  padding: auto;
+  margin: auto;
+} */
+
+.ico-viento {
+  padding: auto;
+  margin-left: 5px;
+}
